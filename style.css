@@ -1,0 +1,55 @@
+/* AULA CSS */
+
+/* TAGS */
+body{
+	background-color: black;
+	font-family: monospace;
+	color: white;
+	font-size: 40px;
+}
+
+/* O '*' significa toda a página; margin e padding ajustam as margens */
+*{
+	margin: 0; /* "margem externa" */
+	padding: 0; /* "margem interna" */
+}
+
+header{
+	background-color: pink;
+	height: 130px;
+	text-align: left;
+}
+
+footer{
+	clear: both; /* propriedade usada para fixar o rodapé abaixo das divs.
+	OBS: sem essa propriedade o meu não deu problema, mas na vídeo aula foi 
+	utilizada pq o rodapé se escondeu atrás das divs. 
+	ATUALIZAÇÃO: quando mudei o footer para antes das divs aqui no código, deu esse problema, então tive que usar a propriedade. */
+	background-color: violet;
+	height: 50px;
+}
+
+/* IDS Para declarar ID se usa '#' */
+#div_esquerda{
+	background-color: purple;
+	min-height: 200px;
+	width: 60%;
+	/* A propriedade float vai forçar uma div a ficar ao lado da outra */
+	float: left;
+	/*margin: 20px;*/
+}
+/* a propriedade min-height ajusta a div conforme a quantidade de conteúdo */ 
+#div_direita{
+	background-color: powderblue;
+	min-height: 200px;
+	width: 40%; 
+	/* A propriedade float vai forçar uma div a ficar ao lado da outra */
+	float: right;
+    /*padding: 20px;*/
+}
+
+/* CLASS Para declarar uma class se utiliza '.' */
+.container{
+	width: 960px;
+	margin: 100px;
+}
